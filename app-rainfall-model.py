@@ -16,12 +16,23 @@ import plotly.graph_objects as go
 
 
 # Configuración
-st.set_page_config(page_title="Rainfall Classifier", layout="wide")
+st.set_page_config(
+    page_title="Rainfall Classifier", 
+    layout="wide",
+    page_icon = '⛈️',
+    initial_sidebar_state = 'expanded')
 
 # Usar una imagen de fondo con CSS y agregar la descripción dentro de la imagen
 st.markdown(
     """
     <style>
+    :root {
+        --primary-color: # 2a7abf;
+        --text-color: #414141;
+        }
+    body{
+        color: var(--text-color);
+        }
     .container {
         background-image: url('https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-size: cover;
