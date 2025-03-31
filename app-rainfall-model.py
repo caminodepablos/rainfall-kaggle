@@ -30,9 +30,13 @@ st.markdown(
         --primary-color: # 2a7abf;
         --text-color: #414141;
         }
-    body{
-        color: var(--text-color);
-        }
+    body, [data-testid="stAppViewContainer"] {
+        background-color: white !important;
+        color: black !important;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #f0f2f6 !important;
+    }
     .container {
         background-image: url('https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-size: cover;
