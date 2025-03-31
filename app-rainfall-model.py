@@ -103,9 +103,6 @@ st.markdown(
     </div>
     """, unsafe_allow_html=True)
 
-# Inicia SHAP
-shap.initjs()
-
 # -------------------------------------------------------
 # MODELO Y DATASET
 # -------------------------------------------------------
